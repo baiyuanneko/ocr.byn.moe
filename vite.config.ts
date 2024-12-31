@@ -61,7 +61,7 @@ export default defineConfig({
 
         ]
       },
-      includeAssets: ['assets/*']
+      includeAssets: ['./assets/*']
     })
   ],
   resolve: {
