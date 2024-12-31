@@ -60,8 +60,7 @@ export default defineConfig({
           },
 
         ]
-      },
-      includeAssets: ['./assets/*']
+      }
     })
   ],
   resolve: {
