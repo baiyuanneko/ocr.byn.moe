@@ -58,23 +58,10 @@ export default defineConfig({
               },
             },
           },
-          {
-            urlPattern: /^.*\/assets\/(tesseract-core\.wasm|tesseract-worker\.js|tesseract-core-fallback\.wasm)/i,
-            handler: 'CacheFirst',
-            options: {
-              cacheName: 'tesseract-assets',
-              expiration: {
-                maxEntries: 10,
-                maxAgeSeconds: 60 * 60 * 24 * 365, // <== 365 days
-              },
-              cacheableResponse: {
-                statuses: [0, 200],
-              },
-            },
-          },
 
         ]
       },
+      includeAssets: ['assets/*']
     })
   ],
   resolve: {
