@@ -1,4 +1,3 @@
-
 name: Deploy static content to Pages
 
 on:
@@ -33,6 +32,8 @@ jobs:
         run: npm ci
       - name: Build
         run: npm run build-only
+      - name: Copy WASM Assets
+        run: bash ./copy_wasm_assets.sh
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Upload artifact

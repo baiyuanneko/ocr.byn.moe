@@ -4,8 +4,9 @@
 
 ## 编译
 
-```
+```sh
 npm run build-only
+bash ./copy_wasm_assets.sh # this is important!
 ```
 
 ## 本地开发
